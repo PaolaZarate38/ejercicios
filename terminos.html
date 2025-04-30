@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos-terminos.css">
 </head>
 <body>
     <main>
         <header id="arriba">
             <h1>Terminos y Condiciones de FullStock</h1>
-            <p>¡Bienvenidos a FullStock, la tienda e-commerce favorita de los desarrolladores web! Aquí te <br> 
-                contamos todo lo que necesitas saber antes de comprar con nosotros.</p>
+            <p><i>
+                ¡Bienvenidos a FullStock, la tienda e-commerce favorita de los desarrolladores web! Aquí te <br>
+                    contamos todo lo que necesitas saber antes de comprar con nosotros.
+            </i></p>
         </header>
         <br>
         <section>
@@ -32,6 +35,14 @@
         </section>
         <br>
         <section>
+            <h2>Proceso de compra</h2>
+            <ol>
+                <li><strong>Selecciona tus productos:</strong> Navega por nuestras categorías de <strong>polos</strong>, <strong>tazas</strong>, y <strong>stickers</strong>.</li>
+                <li><strong>Añade al carrito:</strong> Haz clic en el botón Agregar al Carrito en la página de producto.</li>
+                <li><strong>Completa el pago:</strong>Llena el formulario de pago y confirma tu compra. ¡Es fácil!</li>
+            </ol>
+        </section>
+        <section>
             <h2>Metodo de Pago</h2>
         <table>
             <p>Aceptamos los siguientes metodos de pago</p>
@@ -44,17 +55,17 @@
             </thead>
             <tbody>
                 <tr>
-                    <td >Tarjeta de credito</td>
+                    <th scope="row" >Tarjeta de credito</th>
                     <td >0%</td>
                     <td >Inmediato</td>
                 </tr>
                 <tr>
-                    <td >Paypal</td>
+                    <th scope="row">Paypal</th>
                     <td >0.5%</td>
                     <td >Inmediato</td>
                 </tr>
                 <tr>
-                    <td >Transferencia bancaria</td>
+                    <th scope="row">Transferencia bancaria</th>
                     <td >1%</td>
                     <td >1-2 días habiles</td>
                 </tr>
@@ -76,8 +87,10 @@
         <section>
             <h2>Garantia de Satisfaccion</h2>
             <p>En FullStock nos enorgullecemos de la calidad de nuestros productos.</p>
-            <img src="./img.png" alt="sello de garantia">
-            <figcaption>Garantía de Satisfacción: Si no te gusta, ¡te devolvemos el dinero!</figcaption>
+            <figure>
+                <img src="./img.png" alt="sello de garantia">
+                <figcaption>Garantía de Satisfacción: Si no te gusta, ¡te devolvemos el dinero!</figcaption>
+            </figure>
         </section>
         <br>
         <section>
@@ -115,16 +128,24 @@
             <h2>Contacto</h2>
             <br>
             <p>¿Tienes dudas? ¡Nos encantaría ayudarte! Puedes contactarnos en cualquier momento:</p>
-            <a href="mailto:soporte@fullstock.com"><i>Email: soporte@fullstock.com</i></a>
             <br>
-            <p><i>Teléfono: +1 234 567 890</i></p>
+            <p>
+                <i>Eamail:</i>
+                <a  id="correo" href="mailto:soporte@fullstock.com"><i>soporte@fullstock.com</i></a>
+                <br>
+                <i>Telefono:</i>
+                <i id="telefono">"+1 234 567 890"</i>
+            
+            </p>
+        
             <br>
+            
             <p>O visita nuestra página de contacto para más detalles</p>
         </section>
         <footer>
             <p>&copy; 2023 FullStock. Todos los derechos reservados</p>
-            <a href="#arriba">Volver arriba</a>
+            <a id="volver" href="#arriba">Volver arriba</a>
         </footer>
-    </main>
+    </main> 
 </body>
 </html>
